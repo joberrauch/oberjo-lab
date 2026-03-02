@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Computational Researcher Portfolio | Terminal-Minimalist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19b3e6",
+                        "background-light": "#000000",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["JetBrains Mono", "monospace"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>body {
+    background-color: #000;
+    color: #fff;
+    font-family: "JetBrains Mono", monospace
+    }
+.video-grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 0.4; /* Still high so you can see it clearly for now! */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columns across */
+    grid-template-rows: repeat(5, 1fr);    /* 2 rows down (8 videos total) */
+}
+
+.video-grid-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures each video fills its specific grid square perfectly */
+}
+.custom-border {
+    border-color: rgba(25, 179, 230, 0.2)
+    }
+.project-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border: 1px solid rgba(25, 179, 230, 0.4);
+    color: #19b3e6
+    }
+::selection {
+    background: #19b3e6;
+    color: #000
+    }</style>
+</head>
+<body class="font-display bg-background-dark text-slate-100 antialiased selection:bg-primary selection:text-black">
+<div class="video-grid-background">
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+    <video autoplay loop muted playsinline><source src="./backgroundweb.webm" type="video/webm"></video>
+</div>
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden z-10">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex flex-col items-start justify-between border-b border-white/10 px-6 py-8 md:px-24 lg:px-48 items-center text-center">
+<div class="flex w-full items-baseline justify-between mb-6 flex-col !items-center !justify-center gap-2">
+<h1 class="text-xl font-bold tracking-tighter text-white">Johannes Oberrauch | Undergraduate Student</h1>
+<div class="flex gap-4 text-xs uppercase tracking-widest text-primary">
+<span></span>
+<span class="text-white/30"></span>
+</div>
+</div>
+<div class="max-w-2xl">
+<p class="text-sm leading-relaxed text-slate-300">
+                        I will finish my BSc. in Neuroscience at the University of Cologne in March 2026. During my studies, I was able to 
+                        build a broad neurobiological framework through theoretical coursework and practical lab experience. Recently, I've been 
+                        fascinated by aspects of computational neuroscience, from analysing large data sets in Python or R, to automated animal tracking
+                        or cell counting.
+                    </p>
+</div>
+</header>
+<main class="flex flex-1 flex-col px-6 py-10 md:px-24 lg:px-48">
+<section class="mb-16 flex flex-col items-center text-center">
+<div class="flex items-center gap-2 mb-8 text-primary justify-center">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<h2 class="text-xs font-bold uppercase tracking-[0.2em]">Contact_Information</h2>
+</div>
+<div class="group relative inline-flex flex-col gap-1 cursor-pointer" onclick="copyEmail(this)" data-user="ober-jo" data-domain="protonmail.com">
+    <p class="text-lg font-medium text-white hover:text-primary transition-colors">ober-jo [at] protonmail (dot) com</p>
+    <p class="text-[10px] uppercase tracking-widest text-white/40 group-hover:text-primary/60 transition-colors copy-status">Click to copy</p>
+</div>
+</section>
+<section class="mb-16">
+<div class="flex items-center gap-2 mb-10 text-primary justify-center">
+<span class="material-symbols-outlined text-sm">database</span>
+<h2 class="text-xs font-bold uppercase tracking-[0.2em]">Project_Log</h2>
+</div>
+<div class="flex gap-12 grid grid-cols-1 md:grid-cols-3">
+<div class="group flex flex-col gap-3 bg-black/95 border border-white/10 p-6 hover:border-primary transition-colors items-center text-center backdrop-blur-sm">
+    
+    <div class="flex flex-wrap items-center gap-3 flex-col !items-center">
+        <h3 class="text-base font-bold text-white uppercase tracking-tight">My Bachelor Thesis</h3>
+        <div class="flex gap-2 justify-center">
+            <span class="project-tag">[immunohistochemistry]</span>
+            <span class="project-tag">[deeplabcut]</span>
+            <span class="project-tag">[hippocampus]</span>
+        </div>
+    </div>
+
+    <div class="w-full overflow-hidden border border-white/10 mt-2 mb-2">
+        <img src="./Hp_V_R_06_8_QuPath.png" alt="project poster" class="w-full h-32 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100">
+    </div>
+    
+    <p class="text-xs leading-relaxed text-slate-400 max-w-3xl">
+                                        We presented 24 3-day old domestic chicks with either a familiar or unfamiliar scented object and analysed their behavioural and neural response.
+    </p>
+
+    <div class="flex gap-6 mt-2 text-[10px] uppercase tracking-[0.2em]">
+        <a href="./NovelOdour_BachelorThesis_OberrauchJohannes_tttfinal (1).pdf" target="_blank" class="text-white/40 hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">picture_as_pdf</span> [thesis]
+        </a>
+        <a href="./novel_odor_johannes_oberrauch_ver5.png" target="_blank" class="text-white/40 hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">image</span> [poster]
+        </a>
+    </div>
+
+</div>
+
+<div class="group flex flex-col gap-3 bg-black/95 border border-white/10 p-6 hover:border-primary transition-colors items-center text-center backdrop-blur-sm">
+<div class="flex flex-wrap items-center gap-3 flex-col !items-center">
+<h3 class="text-base font-bold text-white uppercase tracking-tight">Dementia Classification Assignment</h3>
+<div class="flex gap-2 justify-center">
+<span class="project-tag">[multilayer perceptrons]</span>
+<span class="project-tag">[python]</span>
+<span class="project-tag">[r]</span>
+</div>
+    </div>
+    <p class="text-xs leading-relaxed text-slate-400 max-w-3xl">
+                                    As part of a Data Science course, we had to present a final project on a Kaggle dataset of our choosing. Using a Multi-Layer Perceptron, a deep learning algorithm, I successfully classified patients as demented or Non-demented, depending on variables such as cognitive ability, age or education. 
+    </p>
+
+    <div class="flex gap-6 mt-2 text-[10px] uppercase tracking-[0.2em]">
+        <a href="https://github.com/joberrauch/ML_ZfG" target="_blank" class="text-white/40 hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">code</span> [code]
+        </a>
+    </div>
+
+</div>
+
+<div class="group flex flex-col gap-3 bg-black/95 border border-white/10 p-6 hover:border-primary transition-colors items-center text-center backdrop-blur-sm">
+<div class="flex flex-wrap items-center gap-3 flex-col !items-center">
+<h3 class="text-base font-bold text-white uppercase tracking-tight">FELASA Certificate</h3>
+<div class="flex gap-2 justify-center">
+<span class="project-tag">[animal science]</span>
+<span class="project-tag">[mouse]</span>
+<span class="project-tag">[domestic chick]</span>
+</div>
+<div class="w-full overflow-hidden border border-white/10 mt-2 mb-2">
+        <img src="./FELASA_Logo.webp" alt="project poster" class="w-full h-32 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-80 group-hover:opacity-100">
+    </div>
+</div>
+<p class="text-xs leading-relaxed text-slate-400 max-w-3xl">
+                                As part of my studies, I performed a lab-course that licenses me to handle and kill mice (Function A and D). Additionally, during my thesis project, I worked extensively with domestic chics. 
+                            </p>
+
+    <div class="flex gap-6 mt-2 text-[10px] uppercase tracking-[0.2em]">
+        <a href="./Teilnahmebescheinigung_VTK  Johannes Oberrauch 04.07.2023 (1).pdf" target="_blank" class="text-white/40 hover:text-primary transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">picture_as_pdf</span> [certificate]
+        </a>
+    </div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<script>
+    function copyEmail(element) {
+        // Pull the pieces from the hidden data attributes
+        const user = element.getAttribute('data-user');
+        const domain = element.getAttribute('data-domain');
+        const realEmail = user + '@' + domain;
+        
+        // Copy to clipboard
+        navigator.clipboard.writeText(realEmail).then(() => {
+            // Find the status text and change it
+            const statusText = element.querySelector('.copy-status');
+            const originalText = statusText.innerText;
+            
+            statusText.innerText = "E-MAIL COPIED!";
+            statusText.classList.add("text-primary"); // Turns it blue
+            statusText.classList.remove("text-white/40");
+            
+            // Change it back after 2 seconds
+            setTimeout(() => {
+                statusText.innerText = originalText;
+                statusText.classList.remove("text-primary");
+                statusText.classList.add("text-white/40");
+            }, 2000);
+        });
+    }
+</script>
+</body></html>
